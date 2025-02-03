@@ -2,6 +2,7 @@ import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 const now =  dayjs();
 const date = now.format('dddd, MMMM D');
+
 setInterval(() => { renderDateAndTime() }, 1000)
 
 function renderDateAndTime() {
