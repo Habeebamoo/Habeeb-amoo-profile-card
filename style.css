@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/background.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.profile-card {
+    background: rgb(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    width: 400px;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-family: "Babas Neue", sans-serif;
+}
+
+
+.profile-photo {
+    height: 150px;
+}
+
+.profile-photo img {
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+section {
+   font-family: "Liter";
+}
+
+.mail, .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail img, .location img {
+    height: 15px;
+}
+
+.social-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.social { 
+    background: white;
+    border-radius: 20px;
+}
+
+.social img {
+    height: 20px;
+}
+
+.date-and-time {
+    font-family: "Babas Neue", sans-serif;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        width: 95%;
+    }
+}
