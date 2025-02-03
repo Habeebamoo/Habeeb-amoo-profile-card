@@ -9,7 +9,7 @@ function renderDateAndTime() {
   let html = '';
   
   html = `
-    <small><span class="text-primary">Current Date & Time:</span> ${date} <span class="text-primary">${time()}</span></small>
+    <small class="text-primary-emphasis">Current Date & Time: ${date} ${time()}</small>
   `;
 
   document.querySelector('.date-and-time').innerHTML = html;
