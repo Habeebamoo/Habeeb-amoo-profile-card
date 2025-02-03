@@ -17,7 +17,7 @@ function renderDateAndTime() {
 
 function time() {
   const today = new Date();
-  const hour = today.getHours();
+  let hour = today.getHours();
   const minute = today.getMinutes();
   const seconds = today.getSeconds();
 
@@ -49,6 +49,10 @@ function time() {
     secStr = `0${seconds}`;
   } else {
     secStr =seconds
+  }
+
+  if(hour > 12) {
+    hourStr = `0${(hour - 12)}`;
   }
 
   return `${hourStr}:${minsStr}:${secStr} ${meridian}`;
